@@ -1,0 +1,44 @@
+Feature Requirements:
+
+The 'mobile' view has a menu icon, which when clicked, opens the menu and reveals the 3 menu items.  -- DONE
+The 'desktop' view shows the 3 menu items inline, and the menu icon is not needed. -- DONE
+
+Interaction Requirements:
+
+In the “Welcome back!” component:  --DONE
+a. Clicking yes will bring up a form to enter information about the book (Title, Author, etc)
+b. Clicking no will close the component
+
+When the form from 1a is submitted, populate a new component for that book, and render it on the page. --DONE
+c. Do some simple validation on the content to prevent duplicate entries.
+
+
+Technical Requirements:
+
+Create JSON representations of the content. --DONE
+Use templates which will provide the markup and populate the content on the page. --DONE
+Identify and use a commonly used breakpoint for your responsive styles. --DONE
+
+OPTIONAL
+sorting can be done using key comparision.
+EX: sortedarray = array.sort(function(a,b){
+     return a.key>b.key;
+    });
+    regenerate UI again....
+
+NOTES:
+JAVASCRIPT
+Used jquery - only 3rd party JS lib used in project
+Used module javascript pattern to acheive MVC approach.
+Classified models,events,controllers in current.js , which will help in code maintainabilty and strucural oraganisation.
+Used templateeventhandling.js - a global reference - which has methods to automate 
+        -  event handling and 
+        -  template loading 
+CSS
+Used 760 screenwidth as breakpoint to acheive responsive design
+Used flexbox concepts to organize the layout and also helpful in acheiving responsive design
+
+HTML
+Used html5,latest semantic tags..
+
+Tested in IE10 and chrome.

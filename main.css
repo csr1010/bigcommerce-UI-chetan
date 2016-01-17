@@ -1,0 +1,135 @@
+
+@font-face {
+  font-family: "Roboto";
+  src:url("Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+
+}
+.column{
+     display: flex;
+     display: -ms-flexbox;
+     flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    -ms-flex-align:start;
+}
+.holder {
+    background: #F4E6DF;
+    height: 100%;
+    padding: 0 0 0 1%;
+}
+.but{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.menu{
+    background-image: url(ic_menu_24px.svg);
+}
+.close{
+    background-image: url(ic_close_24px.svg);
+}
+.left , .right{
+    width: 100%;
+}
+.hidden{
+    display: none !important;
+}
+.box {
+    overflow: hidden;
+    box-shadow: 0 0 5px #8D8A8A;
+    width: 98%;
+    margin: 2% 0;
+    background: #fff;
+}
+
+.mainsection {
+    width: 100%;
+}
+
+.header {
+    background: #FF0068;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+.body {
+    color:#413E3E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+        padding: 1rem;
+}
+.nav a{
+       text-decoration: none;
+       margin:  1rem;
+       font-weight: bold;
+       color:#424242;
+       font-size: 0.75rem;
+}
+@media (min-width: 768px){
+    .body{
+        width: 768px;
+        margin-left: calc(50% - 384px);
+    }
+    
+    .column {
+        flex-direction: row;
+        -ms-flex-direction: row;
+    }
+    .left , .right{
+        width: 50%;
+    }
+    .but{
+        display: none;
+        width: 24px;
+        height: 24px;
+    }
+    .nav {
+        display: block;
+        padding: 1rem;
+    }
+}
+
+.spacious {
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.buttonholder {
+    padding: 1rem;
+}
+.buttonholder button:nth-child(2) {
+    color:orange;
+}
+button , input[type=submit] {
+    background: none;
+    border: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.title {
+    margin: 0.15rem 0 ;
+    font-size: 1.3em;
+}
+
+.lighter {
+    color: #7A7777;
+    font-size: smaller;
+}
+
+.wrapper {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+form input {
+    display: block;
+}

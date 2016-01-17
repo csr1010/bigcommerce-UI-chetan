@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+               initial-scale=1.0">
+    <title>BIG COMMERCE</title>
+    <link href="main.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body class=body>
+    <header class=header>
+        <button data-but = "close" id="menuopenclose"  class="but close"></button>
+        <div>My Books</div>
+    </header>
+    <section class=mainsection>
+        <nav class="nav column">
+            <a href="">books</a>
+            <a href="">Top Aussie beaches</a>
+        </nav>
+        <section class="holder column">
+            <section class=left>
+                <div class=box>
+                    <section class="spacious">
+                        <h3 style='color:#FF0068;'>
+                            Welcome back !</h3>
+                        <div>Its beean a while.
+                        </div>
+                        <div> Read any books lately? </div>
+                    </section>
+                    <section id = formComp style = "display:none"class="spacious">
+                        <form>
+                            <input type=text id=TITLE placeholder = Title required>
+                            <input type=text id=NAME placeholder = Author >
+                            <input type=url  id=IMG placeholder = Imageurl >
+                            <button id=submitdata>Submit</button>
+                        </form>
+                    </section>
+                    <footer class=buttonholder>
+                        <button class="compopenclose" data-comp="show" >yes</button>
+                        <button class="compopenclose" data-comp="hide" >No</button>
+                    </footer>
+                </div>
+                
+            </section>
+            <section class=right>
+                <div class=box>
+                    <section class="spacious">
+                        <img style="width:100%;"
+                                    src="beaches.JPG">
+                        <div>
+                            <span class="lighter">
+                                        November 10</span>
+                              <div>
+                                White Heaver beach</div>
+                             <div>
+                                White Heaver beach ,Australia</div>
+                        </div>
+                    </section>
+                    <footer class=buttonholder>
+                        <button>Share</button>
+                        <button>Explore</button>
+                    </footer>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+<script src="jquery.js"></script>
+<script src="templateeventhandling.js"></script>
+<script src="current.js"></script>
+
+</html>
